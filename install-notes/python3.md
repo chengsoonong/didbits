@@ -54,3 +54,20 @@ Also install several tools that are commonly used for managing data
 ```shell
 pip install numpy scipy matplotlib pandas
 ```
+
+## MathJax
+
+The IPython notebook uses the MathJax Javascript library for rendering
+LaTeX in web browsers. Because MathJax is large, it is not included
+with IPython. Normally IPython will load MathJax from a CDN, but if
+you have a slow network connection, or want to use LaTeX without an
+internet connection at all, you can install MathJax locally.
+
+A quick and easy method is to install it from a python session:
+```python
+from IPython.external.mathjax import install_mathjax
+install_mathjax()
+```
+
+If you obtain a unknown URL type error for https, it is because you
+did not have openSSL compiled into python.
