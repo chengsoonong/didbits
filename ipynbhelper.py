@@ -11,6 +11,7 @@ import time
 import sys
 import os
 import io
+import argparse
 try:
     from queue import Empty
 except:
@@ -191,14 +192,7 @@ def process_notebook_file(fname, action='clean', output_fname=None):
     with io.open(output_fname, 'w') as f:
         nb = current.write(nb, f, 'json')
 
-
-if __name__ == '__main__':
-    # TODO: use argparse instead
-    args = sys.argv[1:]
-    targets = [t for t in args if not t.startswith('--')]
-    action = 'check' if '--check' in args else 'clean'
-    action = 'render' if '--render' in args else action
-
+def take_action(action, targets):
     rendered_folder = os.path.join(os.path.dirname(__file__),
                                    'rendered_notebooks')
     if not os.path.exists(rendered_folder):
@@ -221,3 +215,24 @@ if __name__ == '__main__':
                 output_fname = fname
             process_notebook_file(fname, action=action,
                                   output_fname=output_fname)
+    
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument('targets', help='List of directories to apply action to',
+                        action='append')
+    parser.add_argument('-c', '--clean', help='Clean up generated files',
+                        action='store_true')
+    parser.add_argument('-d', '--debug', help='Check that notebooks are ok',
+                        action='store_true')
+    parser.add_argument('-r', '--render', help='Render notebooks to directory render_notebooks',
+                        action='store_true')
+    args = parser.parse_args()
+
+    targets = [t for t in args.targets]
+    if args.render:
+        take_action('render', targets)
+    if args.debug:
+        take_action('check', targets)
+    if args.clean:
+        take_action('clean', targets)
