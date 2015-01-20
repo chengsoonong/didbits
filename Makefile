@@ -1,6 +1,6 @@
 # Makefile used to manage the git repository, not for the tutorial
 
-TARGETS="CrossVal"
+TARGETS="KernelNorm"
 
 all: debug render clean
 

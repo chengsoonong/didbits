@@ -14,6 +14,10 @@ Mostly in python.
 
 - **Double loop cross validation** ```CrossVal``` When a classifier has hyperparameters that need to be set, a separate validation set of data needs to be set aside. The double loop refers to the need for an inner loop to find good hyperparameters and an outer loop to compute test error.
 
+- **Normalising the kernel matrix** ```KernelNorm``` In contrast to
+  normalising features, we can normalise the kernel matrix. This is
+  particularly useful when combining kernels, e.g. with MKL.
+
 ## Ideas
 
 - **No peeking.** It is not obvious what generalisation error is, and how to
