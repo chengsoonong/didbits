@@ -70,7 +70,7 @@ reasons for thresholding, e.g. prior knowledge that values are positive,
 or removing outliers from the data.
 
 - **Dependent random variables.** Graphical models, etc.
-- 
+
 - **Computing entropy and mutual information** practical tricks for counting, accounting for zeros, and binning. 
 
 - **Open science**
