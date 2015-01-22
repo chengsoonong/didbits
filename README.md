@@ -14,9 +14,16 @@ Mostly in python.
 
 - **Double loop cross validation** ```CrossVal``` When a classifier has hyperparameters that need to be set, a separate validation set of data needs to be set aside. The double loop refers to the need for an inner loop to find good hyperparameters and an outer loop to compute test error.
 
-- **Normalising the kernel matrix** ```KernelNorm``` In contrast to
+- **Normalising features** ```Normalisation/normalise_vector.ipynb```
+  Various vector transformations to make learning work well. *Could
+  still have bugs with transpose of matrix*
+
+- **Normalising the kernel matrix** ```Normalisation/normalise_kernel.ipynb``` In contrast to
   normalising features, we can normalise the kernel matrix. This is
   particularly useful when combining kernels, e.g. with MKL.
+
+- **Reshaping data with pandas** ```DataWrangling/process_abs.ipynb```
+  shows an example of converting data into a convenient tabular format.
 
 ## Ideas
 

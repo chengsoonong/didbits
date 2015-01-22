@@ -1,6 +1,6 @@
 # Makefile used to manage the git repository, not for the tutorial
 
-TARGETS="DataWrangling"
+TARGETS="Normalisation"
 
 all: debug render clean
 
