@@ -25,6 +25,10 @@ Mostly in python.
 - **Reshaping data with pandas** ```DataWrangling/process_abs.ipynb```
   shows an example of converting data into a convenient tabular format.
 
+- **Performance measures.** ```Accuracy/evaluation.py``` It is worth
+  repeating things like balanced error, area under the Receiver Operating Characteristic curve, etc. 
+  Many of the concepts are best explained by considering the confusion matrix.
+
 ## Ideas
 
 - **No peeking.** It is not obvious what generalisation error is, and how to
@@ -49,9 +53,6 @@ sanity check your pipeline on a small sample. Taking the first k items
 from your file is generally not a good idea. There are also other good
 reasons, e.g. cross validation, quick debugging, visualisation. Good ways
 to do single pass sampling are not obvious.
-
-- **Performance measures.** It is worth
-repeating things like balanced error, false discovery rate, etc.
 
 - **There is no statistical test for equality.** Hard to convince an
 experimentalist that there is no p-value for showing that two things are
