@@ -1,5 +1,7 @@
 # didbits
 
+[![Join the chat at https://gitter.im/chengsoonong/didbits](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/chengsoonong/didbits?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 An unsorted bunch of ideas on practical aspects of machine
 learning. This is aimed at the scientist (biologist, astronomer) who
 is starting to use machine learning tools.
