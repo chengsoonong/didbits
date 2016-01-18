@@ -4,9 +4,11 @@ An unsorted bunch of ideas on practical aspects of machine
 learning. This is aimed at the scientist (biologist, astronomer) who
 is starting to use machine learning tools.
 
-If you have a good description for any of the concepts in [Ideas](#ideas) please send me a pull request.
+If you have a good description for any of the concepts in [Ideas](#ideas)
+please send me a pull request.
 Use the issue tracker for suggested topics.
 
+The script ipynbhelper.py comes from [nbtidy](https://github.com/chengsoonong/nbtidy)
 
 ## Concepts with more detailed descriptions
 Mostly in python.
@@ -26,7 +28,7 @@ Mostly in python.
   shows an example of converting data into a convenient tabular format.
 
 - **Performance measures.** ```Accuracy/evaluation.py``` It is worth
-  repeating things like balanced error, area under the Receiver Operating Characteristic curve, etc. 
+  repeating things like balanced error, area under the Receiver Operating Characteristic curve, etc.
   Many of the concepts are best explained by considering the confusion matrix.
 
 ## Ideas
@@ -79,7 +81,6 @@ or removing outliers from the data.
 
 - **Dependent random variables.** Graphical models, etc.
 
-- **Computing entropy and mutual information** practical tricks for counting, accounting for zeros, and binning. 
+- **Computing entropy and mutual information** practical tricks for counting, accounting for zeros, and binning.
 
 - **Open science**
-
