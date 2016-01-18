@@ -1,6 +1,6 @@
 # Makefile used to manage the git repository, not for the tutorial
 
-TARGETS="Normalisation"
+TARGETS="DataWrangling"
 
 all: debug render clean
 
@@ -18,4 +18,3 @@ clean-data:
 	find . -name "*.pkl" | xargs rm -f
 	find . -name "*.npy" | xargs rm -f
 	find . -name "*.mmap" | xargs rm -f
-
