@@ -158,6 +158,23 @@ def linear_separation(num_point, num_feat, num_noise, margin=0.5,
     return metadata, data, label
 
 
+def linear_nonseparable(num_point, num_feat, num_noise, margin=0.5,
+                        sparse=0, homogeneous=True, in_simplex=False, frac_nonsep=0.2):
+    """Generate uniformly distributed data in [-1,1]^d,
+    pick a random hyperplane and create labels according to it.
+    Additionally generate some points that are not linearly separable.
+    """
+    metadata, data, orig_label = linear_separation(int((1-frac_nonsep)*num_point), num_feat,
+                                                   num_noise, margin, sparse, homogeneous,
+                                                   in_simplex)
+    noise = 2.0*(rand(num_feat+num_noise, int(frac_nonsep*num_point))-0.5)
+    rand_label = 2.0*(randint(2, size=int(frac_nonsep*num_point)) - 0.5)
+    data = hstack([data, noise])
+    label = concatenate((orig_label, rand_label))
+
+    return metadata, data, label
+
+
 def linear_separation_example():
     from optwok.testtools import plot_2d
     from matplotlib.pyplot import figure
