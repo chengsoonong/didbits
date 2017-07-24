@@ -29,6 +29,10 @@ Mostly in python.
 - **Reshaping data with pandas** ```DataWrangling/process_abs.ipynb```
   shows an example of converting data into a convenient tabular format.
 
+- **Generating data** ```DataWrangling/toy_data.ipynb```
+  shows the interface on how to generate Gaussian blobs and linearly separable data.
+  The actual code for doing the generation is in ```simdata.py```
+
 - **Performance measures.** ```Accuracy/evaluation.py``` It is worth
   repeating things like balanced error, area under the Receiver Operating Characteristic curve, etc.
   Many of the concepts are best explained by considering the confusion matrix.
