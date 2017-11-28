@@ -37,6 +37,32 @@ Mostly in python.
   repeating things like balanced error, area under the Receiver Operating Characteristic curve, etc.
   Many of the concepts are best explained by considering the confusion matrix.
 
+## Datasets
+
+This is a list of datasets which we were involved in producing.
+
+#### Astronomy
+
+Persistent [Link](http://doi.org/10.4225/08/597c1cc875d86) for data created from
+the Sloan Digital Sky Survey, for classifying {galaxy, star, quasar} from photometric
+measurements.
+
+Attribution Statement: Ong, Cheng Soon (2017): Machine Learning for Astronomy. v1. CSIRO.
+Data Collection. 10.4225/08/597c1cc875d86
+
+License: CSIRO Data Licence
+
+#### Insect Classification
+
+Persistent [Link](http://doi.org/10.4225/08/597c1cfe3f702) for data created with Tanya Latty
+of insects (mostly bees) for pose estimation and species classification.
+
+Attribution Statement: Ong, Cheng Soon (2017): Machine Learning for Insect Classification. v1. CSIRO. Data Collection. 10.4225/08/597c1cfe3f702
+
+License: CSIRO Data Licence
+
+
+
 ## Ideas
 
 - **No peeking.** It is not obvious what generalisation error is, and how to
@@ -54,7 +80,10 @@ predicting everywhere. One option is to do leave one chromosome out
 prediction. But then it is hard to explain that you actually have 23
 different classifiers, and not just one.
 
-- **Visualisation of data and results.** Things like PCA and clustering. See also [t-SNE](http://lvdmaaten.github.io/tsne/).
+- **Visualisation of data and results.** Things like PCA and clustering.
+See also [t-SNE](http://lvdmaaten.github.io/tsne/), and our recent extension
+to allow for a non-linear manifold on the low dimensional side
+[beesnees](https://github.com/chengsoonong/beesnees).
 
 - **How to subsample data.** Perhaps for computational reasons, you may want to
 sanity check your pipeline on a small sample. Taking the first k items
