@@ -1,5 +1,7 @@
 # Thinking about machine learning
 
+*Cheng Soon Ong, 29 Nov 2017*
+
 Machine learning's popularity means that a user is tempted to use it as a magic wand in the hope
 of solving their problem. Unfortunately there are many constraints and assumptions that are
 built-in to the design and implementation of machine learning methods. Here we attempt to
@@ -22,6 +24,7 @@ explanatory variable.
 Other words for labels are: annotations, outcomes, dependent variable.
 
 Machine learning is most useful when there is:
+
 - no mechanistic model of the phenomenon we are trying to predict
 - relatively large amounts of data (many examples)
 - well defined outcomes (labels are binary or real numbers)
@@ -40,6 +43,7 @@ and each row is an example. It is often convenient to add an extra column on the
 for the label. Because we assume that data are vectors, this table of numbers can be
 thought of as an array (for computational convenience) or a matrix
 (for mathematical convenience).
+
 - Be careful about the encoding of labels, for example binary classifiers assume either
   {0,1} or {-1,+1}.
 - How to represent sequences?
@@ -64,6 +68,7 @@ predictor: a predictor as a function, and a predictor as a probabilistic model.
 
 Given the choice of data and predictor representation, we use training data to find
 parameters of the predictor that best explain the data.
+
 - We are interested in generalisation error (not training error)
 - Finding good parameters either involve minimising the objective function or maximising
   the likelihood.
@@ -83,6 +88,8 @@ parameters of the predictor that best explain the data.
 4. Run `sklearn` or `statsmodels` (**this is the machine learning part**)  
   Do not train on the test set.
 5. Convert predictions into human friendly form for decision making
+
+\newpage
 
 ## Extra challenges of life sciences
 
