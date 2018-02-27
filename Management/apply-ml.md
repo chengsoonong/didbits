@@ -54,15 +54,24 @@ The stereotype for a data matrix is that the columns all have zero mean and unit
 The researcher should have good reasons to deviate from this, and to realise its effect
 on the machine learning model.
 
+Since we represent data as vectors, knowledge of linear algebra and analytic
+geometry is needed to understand basic data manipulation.
+
 #### Predictors are functions or probabilistic models
 
-Once we have data in an appropriate vectorial representation, we can get to the business
-of constructing a predictor. There are two major threads of research on how to represent a
+Once we have data in an appropriate vectorial representation, we can get to the
+business of constructing a predictor. There are two major threads of research
+on how to represent a
 predictor: a predictor as a function, and a predictor as a probabilistic model.
 
 - Difference between interpolation and extrapolation
 - If uncertainty is important, use appropriate approaches
 - Understand the difference between the score, the probability, and the binary prediction
+
+We often use predictors whose parameters are represented by finite dimensional
+vectors, and use the tools of linear algebra and analytic geometry to
+manipulate them. Naturally if we choose to use probabilistic models,
+knowledge of probability theory and statistics is important.
 
 #### Learning is finding good parameters
 
@@ -75,6 +84,10 @@ parameters of the predictor that best explain the data.
 - Most numerical approaches usually require calculation of the gradient
 - Note distinction between objective function of the learning method, and the performance
   metric used for evaluating predictions
+
+In addition to the previous mathematical topics, when training a machine learning
+algorithm, we use matrix decompositions, vector calculus and continuous
+optimisation.
 
 ## Data lifecycle
 
