@@ -1,5 +1,6 @@
 # didbits
 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/chengsoonong/didbits/master)
 [![Join the chat at https://gitter.im/chengsoonong/didbits](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/chengsoonong/didbits?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 An unsorted bunch of ideas on practical aspects of machine
