@@ -11,8 +11,6 @@ If you have a good description for any of the concepts in [Ideas](#ideas)
 please send me a pull request.
 Use the issue tracker for suggested topics.
 
-And here Lydia has to put in her three cents worth of comments
-
 The script ipynbhelper.py comes from [nbtidy](https://github.com/chengsoonong/nbtidy)
 
 ## Concepts with more detailed descriptions
